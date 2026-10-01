@@ -1,117 +1,125 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Spring Kickstart, day 1</title><link rel="preconnect" href="https://rsms.me/"><link rel="stylesheet" href="https://rsms.me/inter/inter.css"><style>
+<meta name="robots" content="noindex"><title>Spring Kickstart, day 1: comms to confirm</title>
+<link rel="preconnect" href="https://rsms.me/"><link rel="stylesheet" href="https://rsms.me/inter/inter.css"><style>
 *{box-sizing:border-box}body{margin:0;font:500 16px/1.45 Inter,-apple-system,system-ui,sans-serif;color:#222326;background:#fff;-webkit-font-smoothing:antialiased}
 main{max-width:1240px;margin:0 auto;padding:56px 24px 120px}
 h1{font-size:56px;line-height:1;letter-spacing:-.03em;font-weight:700;margin:0 0 12px}
 h2{font-size:36px;line-height:1.05;letter-spacing:-.025em;font-weight:700;margin:0 0 8px}
 h3{font-size:20px;letter-spacing:-.01em;margin:0 0 6px}
 .lede{font-size:20px;color:rgba(31,32,37,.6);margin:0 0 8px;max-width:760px}
-section{margin-top:88px}.sub{color:rgba(31,32,37,.6);margin:0 0 20px;max-width:760px}
+section{margin-top:80px}.sub{color:rgba(31,32,37,.6);margin:0 0 20px;max-width:760px}
 .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
-.card{background:#EBF0F8;border-radius:24px;padding:24px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;margin-bottom:16px}
+.card{background:#EBF0F8;border-radius:24px;padding:24px;display:flex;flex-direction:column}
 .who{color:rgba(31,32,37,.6);font-size:14px;margin:0 0 14px}
 .msg{background:#fff;border-radius:18px;padding:16px;box-shadow:0 16px 40px -18px rgba(30,40,70,.35);font-size:15px}
+.does{font-size:14px;margin:14px 0 0;color:#3a3d45}
 .note{font-size:13px;color:#8A8F99;margin:10px 0 0}
-.path{font-size:26px;letter-spacing:-.02em;margin-top:40px}
-.strip{display:flex;gap:16px;overflow-x:auto;padding:8px 2px 18px;scroll-snap-type:x mandatory}
-.strip.one{margin-top:-4px}
-.ph{flex:0 0 220px;margin:0;scroll-snap-align:start}
-.ph img{width:220px;border-radius:28px;box-shadow:0 16px 40px -18px rgba(30,40,70,.45);display:block;background:#F5F7FB}
-.ph figcaption{font-weight:650;margin-top:10px;font-size:15px}
-.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:28px}
 .tile{background:#F5F7FB;border-radius:18px;padding:20px}
 .tile b{display:block;font-size:44px;line-height:1;letter-spacing:-.03em;font-weight:700}
 .tile span{color:rgba(31,32,37,.6);font-size:14px}
+.rows{display:grid;gap:10px}.row{background:#F5F7FB;border-radius:16px;padding:16px 18px}
+.mail{background:#fff;border:1px solid #E3E8F0;border-radius:20px;padding:8px 20px 12px;font-size:14px}
+.mail .subj{font-weight:700;font-size:15px;margin:12px 0 4px;color:#1F2025}
 .dark{background:#1F2025;color:#fff;border-radius:24px;padding:32px}
 .dark .sub,.dark .note{color:rgba(255,255,255,.6)}
-.rows{display:grid;gap:10px}.row{background:#fff;border-radius:16px;padding:16px 18px}
-.dark .row{background:rgba(255,255,255,.07)}
-table{border-collapse:collapse;width:100%;font-size:15px}td,th{text-align:left;padding:10px 12px;border-bottom:1px solid #ECEEF2;vertical-align:top}th{font-weight:650}
-ol.plan li{margin:0 0 10px}
-@media(max-width:700px){h1{font-size:40px}h2{font-size:30px}.ph{flex-basis:180px}.ph img{width:180px}}
+table{border-collapse:collapse;width:100%;font-size:15px;margin-top:8px}td,th{text-align:left;padding:10px 12px;border-bottom:1px solid #ECEEF2}th{font-weight:650}
+ol.plan li{margin:0 0 12px}
+@media(max-width:700px){h1{font-size:40px}h2{font-size:30px}main{padding:40px 18px 96px}}
 </style></head>
 <body><main>
-<h1>Spring Kickstart,<br>day 1</h1>
-<p class="lede">What goes out today, what people see when they open the app, where things stand, and how JFI takes over coaching.</p>
-<p class="note">Thursday 1 October 2026. Screens are real captures from this morning's build on demo accounts.</p>
-<section id="announce"><h2>What goes out today</h2>
-<p class="sub">Nothing has been sent yet. Each one waits for your yes.</p>
-<div class="grid3"><div class="card"><h3>Push notification</h3><p class="who">Everyone in the app with notifications on (239 clients, about 1 in 5)</p><div class="msg"><b>Spring Kickstart starts today</b><br>Your new JF Coach is here. Tap to set up your Spring plan (2 minutes).</div><p class="note">Tap opens the app: film, welcome, setup.</p></div><div class="card"><h3>Email</h3><p class="who">Website entrants who haven&#x27;t signed in yet (about 83)</p><div class="msg"><b>It's started: set up your Spring Kickstart</b><br>Your free JF Coach app is ready. Get started: two minutes to set up. Stuck? Reply, or ask JFI in the app.</div><p class="note">Not built yet. Day 2, 3 and 5 reminders also not built.</p></div><div class="card"><h3>Global chat post, from you</h3><p class="who">Everyone in the global room (323 people; the other ~1,000 aren&#x27;t in it)</p><div class="msg">Welcome to the Spring Kickstart, everyone! This is where I'll post challenge news, weekly challenges and prizes. If you need anything, ask JFI.</div><p class="note">Make the room announcement-only first: right now anyone can post.</p></div></div></section>
-<section id="open"><h2>Opening the app for the first time</h2>
-<h3 class="path">New member</h3><p class="sub">Website entrant or brand-new client.</p>
-<div class="strip"><figure class="ph"><img src="img/a01-film.png" alt="1. Spring film" loading="lazy"><figcaption>1. Spring film</figcaption><p class="note">Plays muted for 59 s. Skip in the corner.</p></figure><figure class="ph"><img src="img/a02-welcome.png" alt="2. Welcome" loading="lazy"><figcaption>2. Welcome</figcaption><p class="note">Get Started, or Skip for Now.</p></figure><figure class="ph"><img src="img/a03-coach.png" alt="3. Pick your coach" loading="lazy"><figcaption>3. Pick your coach</figcaption><p class="note">JFI, Sarge, Prof or Buddy, and how often it checks in.</p></figure><figure class="ph"><img src="img/a04-goal.png" alt="4. Your goal" loading="lazy"><figcaption>4. Your goal</figcaption><p class="note">Strong, Tone, Trim, Fit or Wellbeing.</p></figure><figure class="ph"><img src="img/a05-training.png" alt="5. Your training" loading="lazy"><figcaption>5. Your training</figcaption><p class="note">Days, time, where, experience.</p></figure><figure class="ph"><img src="img/a06-habits.png" alt="6. Pick 3 habits" loading="lazy"><figcaption>6. Pick 3 habits</figcaption><p class="note">Plus how you appear on the board.</p></figure><figure class="ph"><img src="img/a07-injury.png" alt="7. Injuries" loading="lazy"><figcaption>7. Injuries</figcaption><p class="note">Yes or no. The program gate is off since 08:25.</p></figure><figure class="ph"><img src="img/a08-notify.png" alt="8. Notifications" loading="lazy"><figcaption>8. Notifications</figcaption><p class="note">Asks for push permission.</p></figure><figure class="ph"><img src="img/a10-tour.png" alt="9. 5-step tour" loading="lazy"><figcaption>9. 5-step tour</figcaption><p class="note">Your day, Training, Challenge, Add, More.</p></figure><figure class="ph"><img src="img/a11-home.png" alt="10. Home, set up" loading="lazy"><figcaption>10. Home, set up</figcaption><p class="note">This week&#x27;s challenge leads. Habits in To do.</p></figure></div>
-<div class="strip one"><figure class="ph"><img src="img/a12-home-skip.png" alt="If they press Skip" loading="lazy"><figcaption>If they press Skip</figcaption><p class="note">Home shows Finish setup until they do it.</p></figure></div>
-<h3 class="path">Existing client</h3><p class="sub">Not in the challenge yet: the same film, welcome and setup, with the returning line. Already joined: straight to Home, no film.</p>
-<div class="strip"><figure class="ph"><img src="img/b01-welcome-existing.png" alt="Welcome, returning" loading="lazy"><figcaption>Welcome, returning</figcaption><p class="note">Adds: “Even if you&#x27;ve done this before, we recommend doing it again.”</p></figure><figure class="ph"><img src="img/a03-coach.png" alt="Same setup, prefilled" loading="lazy"><figcaption>Same setup, prefilled</figcaption><p class="note">Their saved answers are kept.</p></figure><figure class="ph"><img src="img/b03-reveal-existing.png" alt="Keeps their program" loading="lazy"><figcaption>Keeps their program</figcaption><p class="note">“Your program from &lt;trainer&gt; is ready.”</p></figure><figure class="ph"><img src="img/b04-home.png" alt="Home" loading="lazy"><figcaption>Home</figcaption><p class="note">Their sessions, trainer and habits.</p></figure><figure class="ph"><img src="img/b02-redo-entry.png" alt="Redo any time" loading="lazy"><figcaption>Redo any time</figcaption><p class="note">Challenge tab: Finish or redo your setup.</p></figure></div></section>
-<section id="now"><h2>Right now, 12:45</h2>
-<div class="tiles"><div class="tile"><b>1,274</b><span>real accounts on the new app (401 PT clients, 873 challenge sign-ups)</span></div><div class="tile"><b>96</b><span>opened it today</span></div><div class="tile"><b>10</b><span>finished the setup form</span></div><div class="tile"><b>27</b><span>pressed Skip or Do Later</span></div><div class="tile"><b>18</b><span>in the challenge (9 joined today)</span></div><div class="tile"><b>0</b><span>announcements or JFI check-ins sent</span></div></div></section>
-<section id="who"><h2>Who gets JFI</h2>
-<p class="sub">Everyone on the app can chat to JFI today. Only challenge members (18 real people) are set up for JFI check-ins, and those are switched off.</p>
-<table>
-<tr><th>Person</th><th>How many</th><th>What JFI should do (recommended)</th></tr>
-<tr><td>Did the setup form</td><td>10</td><td>Coach them to what they picked: workouts, habits, meals, goal. Plan at their chosen time, a nudge if it helps, a Wednesday recap.</td></tr>
-<tr><td>Opened, skipped the form</td><td>~86</td><td>One job: get the form done. One message a day: &ldquo;Two minutes and your Spring plan's ready.&rdquo; Then coach as above.</td></tr>
-<tr><td>Hasn't opened yet</td><td>1,178</td><td>JFI can't reach them inside the app. The push (239 phones), the entrant email and your chat post are the only way in.</td></tr>
-<tr><td>Challenge sign-ups with no trainer</td><td>835 of the 1,274</td><td>Same as above, plus your sales goal: once they're engaged or asking for help, offer a free session straight into the calendar.</td></tr>
-</table>
-<p class="note">Recommendation: JFI coaches everyone on the app, not just challenge members. Joining the challenge shouldn't be what switches coaching on.</p>
-</section>
-
-<section id="said"><h2>What you said on Tuesday</h2>
-<div class="rows">
-<div class="row">&ldquo;JFI's job is to get them to do what they did on the form&hellip; if they do, they're going to get results.&rdquo;</div>
-<div class="row">&ldquo;What do people do every day? What JFI tells them to.&rdquo; Home leads with one move from JFI.</div>
-<div class="row">&ldquo;A push notification and then in the app, on the home screen, an actual conversation.&rdquo; Tailored, not generic.</div>
-<div class="row">&ldquo;All the app is is a visual representation of what JFI is telling them&hellip; the magic is in the push notifications.&rdquo;</div>
-<div class="row">&ldquo;This is a trial.&rdquo; It doesn't have to be perfect on day one; watch what people respond to and improve it weekly.</div>
-<div class="row">&ldquo;I definitely don't want any reliance on the trainers.&rdquo; Injury, payments or confusion go to a person.</div>
+<h1>Spring Kickstart,<br>comms to confirm</h1>
+<p class="lede">The push, the entrant email and your global chat post, matched to the app as it is tonight. Who gets each one, when, and what your yes sets off.</p>
+<p class="note">Thursday 1 October 2026, 6:27pm. Counts only: no names or emails on this page.</p>
+<div class="tiles"><div class="tile"><b>1,251</b><span>real clients on the app (tests and system accounts left out)</span></div><div class="tile"><b>240</b><span>have notifications on, so can get a push</span></div><div class="tile"><b>869</b><span>entered on the website</span></div><div class="tile"><b>783</b><span>of those have never signed in</span></div><div class="tile"><b>51</b><span>people in the challenge so far</span></div><div class="tile"><b>0</b><span>pushes, emails or chat posts sent</span></div></div>
+<section id="three"><h2>Three things, each waiting for your yes</h2>
+<p class="sub">Nothing has been sent or scheduled. Counts are from the live database at 6:27pm, read-only.</p>
+<div class="grid3"><div class="card"><h3>1. Push to clients</h3><p class="who">240 clients with notifications on. Trainers don&#x27;t get it.</p><div class="msg"><b>Spring Kickstart is on</b><br>Day 1 is live. Open JF Coach, tick today&#x27;s habits and see what you can win.</div><p class="does"><b>Your yes does this:</b> Schedules 4 batches of about 60, 10 minutes apart. Tapping it opens the app. Anyone who hasn&#x27;t set up gets the film, welcome and setup first.</p></div><div class="card"><h3>2. Email to website entrants</h3><p class="who">531 of 857 entrants who haven&#x27;t finished getting in.</p><div class="msg"><b>Spring Kickstart has started. Your app is ready</b><br>469 never signed in<br><br><b>One step left for the Spring Kickstart</b><br>62 signed in, setup not finished</div><p class="does"><b>Your yes does this:</b> Sends from support@ through JF Mail, one person at a time, about 27 minutes in total. Anyone who signs in or finishes setup before it runs is dropped automatically.</p></div><div class="card"><h3>3. Your post in the global chat</h3><p class="who">322 people in the room today (304 clients).</p><div class="msg">Welcome to the Spring Kickstart, everyone. This chat is where I&#x27;ll post challenge news, the weekly challenge and prize updates.<br><br>Overall winner: 12 weeks of PT. Category winners: 3 PT sessions each. To win a prize you need JF+ and one real starting measurement.<br><br>Haven&#x27;t finished your setup? Challenge tab, Finish your setup. Questions? Ask JFI or your trainer. Let&#x27;s go. Jamie</div><p class="does"><b>Your yes does this:</b> First makes the room announcement-only (only you post, everyone can still react). You then post it yourself from your account.</p></div></div></section>
+<section id="push"><h2>Push: when</h2>
+<p class="sub">Clients only, in 4 even batches so the app isn't hit by everyone at once. Each batch is a fair mix of people, not one trainer's book.</p>
+<div class="two"><div class="row"><b>Tonight:</b> 7:30pm, 7:40pm, 7:50pm, 8:00pm. Say yes before about 7:15pm.</div>
+<div class="row"><b>Or tomorrow:</b> 7:30am, 7:40am, 7:50am, 8:00am, after the 7:00 to 7:20 morning slot.</div></div>
+<table><tr><th>Batch</th><th>When</th><th>Who</th></tr><tr><td>Batch 1</td><td>+0 min</td><td>about 60 clients</td></tr><tr><td>Batch 2</td><td>+10 min</td><td>about 60 clients</td></tr><tr><td>Batch 3</td><td>+20 min</td><td>about 60 clients</td></tr><tr><td>Batch 4</td><td>+30 min</td><td>about 60 clients</td></tr></table>
+<p class="note">The app only sends announcements between 7am and 9pm. A batch scheduled later waits until 7am. Any batch can be cancelled until it goes.</p></section>
+<section id="email"><h2>Email: what they get</h2>
+<p class="sub">The same plain style as the welcome email, from support@, with your signature and an unsubscribe line. Shown here with a made-up person.</p>
+<div class="two"><div class="mail"><p class="subj">Spring Kickstart has started. Your app is ready</p><div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#222;max-width:640px;margin:0 auto;padding:8px 0 24px">
+<p>Hey Sam,</p>
+<p>The Spring Kickstart started today and your spot is saved. You just haven't opened the app yet. It takes two minutes:</p>
+<p style="margin:12px 0">
+<b>1.</b> Download JF Coach<br>
+iPhone: <a href="https://apps.apple.com/au/app/id6791106148" style="color:#1a73e8;">App Store</a><br>
+Android: <a href="https://play.google.com/store/apps/details?id=au.jamiefitness.coach" style="color:#1a73e8;">Google Play</a>
+</p>
+<p style="margin:12px 0"><b>2.</b> Open it and enter this email: <b>sam@example.com</b><br>
+First time in, you set your own password. Don't guess one.</p>
+<p style="margin:12px 0"><b>3.</b> Do the quick setup: your coach, your goal and your habits. Then you're on the board.</p>
+<p style="margin:16px 0 6px"><b>What you can win</b></p>
+<p style="margin:0 0 16px">
+Overall winner: 12 weeks of PT<br>
+Category winners (Strong, Tone, Trim, Fit, Wellbeing): 3 PT sessions each<br>
+To win a prize you need JF+ and one real starting measurement. The setup asks for it.
+</p>
+<p>Stuck? Just reply to this email.</p>
+<p style="margin-top:28px;">Kind Regards,</p>
+<p style="margin:12px 0 0 0;">
+<img src="https://jamiefitness.au/spring-kickstart/jamie-signature.jpg" width="260" alt="Jamie Montalto, Director, Jamie Fitness" style="display:block;border:0;max-width:420px;width:100%;height:auto;" />
+</p>
+<div style="margin-top:32px;padding-top:20px;border-top:1px solid #e6ecf3;text-align:center">
+  <p style="margin:0;font-size:12px;line-height:1.5;color:#666666">
+    You are receiving this because you signed up to the Spring Kickstart Challenge with Jamie Fitness.<br>
+    Jamie Fitness Pty Ltd · ABN 75 668 325 460 · Melbourne VIC 3000, Australia<br>
+    This is a commercial email. Click <a href="https://app.jamiefitness.au/jfmail/subscription/00000000-sample" style="color:#666666;text-decoration:none;"><span style="color:#666666;text-decoration:none;">Unsubscribe</span></a> and we will not email you again.
+  </p>
 </div>
-</section>
-
-<section id="gap"><h2>Built vs live</h2>
-<table>
-<tr><th>Your plan</th><th>Built?</th><th>Live?</th></tr>
-<tr><td>Pick your coach and how often it checks in</td><td>Yes, in setup</td><td>Saved, but nothing reads it yet</td></tr>
-<tr><td>Morning plan, workout reminder, &ldquo;two habits before bed&rdquo;, Wednesday recap, Thursday new challenge</td><td>Yes, the JFI rhythm engine</td><td>No. Dry run only, and paused since July</td></tr>
-<tr><td>Home leads with JFI's one move</td><td>Yes</td><td>Yes</td></tr>
-<tr><td>JFI knows their form answers (goal, injuries, barriers)</td><td>Saved</td><td>Not given to JFI chat</td></tr>
-<tr><td>JFI knows the challenge (points, weekly and secret challenges, prizes)</td><td>Partly</td><td>Knows the day and week only</td></tr>
-<tr><td>JFI starts the conversation in the chat</td><td>No</td><td>No. Pushes only, and 4 in 5 have notifications off</td></tr>
-<tr><td>Remembers each person across days</td><td>No</td><td>No. Last 16 messages only</td></tr>
-<tr><td>Injury, payments, confused &rarr; a person</td><td>Yes</td><td>No. Nobody is set to receive them</td></tr>
-<tr><td>Non-client &rarr; free session booking</td><td>In-app card only</td><td>Card yes, JFI no</td></tr>
-</table>
-<p class="note">Setup already promises: &ldquo;Each day I'll tell you the one thing to do next.&rdquo; Right now JFI doesn't.</p>
-</section>
-
-<section id="plan"><div class="dark"><h2>The plan</h2>
-<h3 style="margin-top:20px">Today</h3>
-<ol class="plan">
-<li><b>Tell people it's started.</b> Push at 5:30pm, clients only, sent over 15 minutes. Entrant email tonight. Make the global chat announcement-only, add everyone, then you post.</li>
-<li><b>Teach JFI the challenge.</b> Points, this week's challenge, the secret unlock, prizes, &ldquo;what do I do now&rdquo;, and where support and cancelling go. Give it their form answers.</li>
-<li><b>Dry run the check-ins this afternoon.</b> Every message JFI would send gets written down and nothing sends. You read them tonight.</li>
-</ol>
-<h3>Tomorrow 7am</h3>
-<ol class="plan" start="4">
-<li><b>JFI check-ins go live</b> for everyone who's done setup. Skippers get the one &ldquo;finish your setup&rdquo; nudge. Quiet hours 9pm to 7am, max 3 a day, no duplicates.</li>
-<li><b>Each check-in also lands in the JFI chat</b> so people without notifications see it when they open the app.</li>
-</ol>
-<h3>This week</h3>
-<ol class="plan" start="6">
-<li>JFI remembers each person (wins, struggles, what they committed to).</li>
-<li>Missed-workout and 3-days-quiet check-ins. A daily &ldquo;who's done setup&rdquo; list for Ava and Gabrielle.</li>
-<li>Fix the 3 bonus-entry links in the welcome email (they've never credited anyone). Secret challenges for weeks 5 and 6. JF+ wording on prizes.</li>
-<li>Learning loop: which messages get opened, which get ignored, adjusted weekly.</li>
-</ol>
-</div></section>
-
-<section id="decide"><h2>Your four calls</h2>
-<div class="rows">
-<div class="row"><b>1. The push:</b> send at 5:30pm today, clients only (not trainers)?</div>
-<div class="row"><b>2. Who JFI coaches:</b> everyone on the app, or only challenge members?</div>
-<div class="row"><b>3. Who gets the handoffs</b> (injury, payments, confused): Gabrielle?</div>
-<div class="row"><b>4. Check-ins live tomorrow 7am</b>, after you read tonight's dry run?</div>
 </div>
-</section>
-
+</div>
+<div class="mail"><p class="subj">One step left for the Spring Kickstart</p><div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#222;max-width:640px;margin:0 auto;padding:8px 0 24px">
+<p>Hey Sam,</p>
+<p>You're in the app, but your Spring setup isn't finished, so you're not on the board yet.</p>
+<p style="margin:12px 0">Open JF Coach, go to the <b>Challenge</b> tab and tap <b>Finish your setup</b>. Two minutes: your coach, your goal and your habits.</p>
+<p style="margin:12px 0">Your login is <b>sam@example.com</b>.</p>
+<p style="margin:16px 0 6px"><b>What you can win</b></p>
+<p style="margin:0 0 16px">
+Overall winner: 12 weeks of PT<br>
+Category winners (Strong, Tone, Trim, Fit, Wellbeing): 3 PT sessions each<br>
+To win a prize you need JF+ and one real starting measurement. The setup asks for it.
+</p>
+<p>Stuck? Just reply to this email.</p>
+<p style="margin-top:28px;">Kind Regards,</p>
+<p style="margin:12px 0 0 0;">
+<img src="https://jamiefitness.au/spring-kickstart/jamie-signature.jpg" width="260" alt="Jamie Montalto, Director, Jamie Fitness" style="display:block;border:0;max-width:420px;width:100%;height:auto;" />
+</p>
+<div style="margin-top:32px;padding-top:20px;border-top:1px solid #e6ecf3;text-align:center">
+  <p style="margin:0;font-size:12px;line-height:1.5;color:#666666">
+    You are receiving this because you signed up to the Spring Kickstart Challenge with Jamie Fitness.<br>
+    Jamie Fitness Pty Ltd · ABN 75 668 325 460 · Melbourne VIC 3000, Australia<br>
+    This is a commercial email. Click <a href="https://app.jamiefitness.au/jfmail/subscription/00000000-sample" style="color:#666666;text-decoration:none;"><span style="color:#666666;text-decoration:none;">Unsubscribe</span></a> and we will not email you again.
+  </p>
+</div>
+</div>
+</div></div>
+<div class="rows" style="margin-top:16px">
+<div class="row"><b>531 get it:</b> 469 who never signed in and 62 who signed in but didn't finish setup.</div>
+<div class="row"><b>318 entrants can't get it yet:</b> they aren't in JF Mail, so they couldn't have got the welcome email either (why isn't confirmed yet). They do have app accounts. Adding them to JF Mail first is a separate yes.</div>
+<div class="row"><b>8 unsubscribed</b> and are skipped.</div>
+<div class="row"><b>Every email was rendered</b> to a private folder before anything is sent, one file per person, so they can be checked. The send won't run without the exact count, so an old list can't go out by mistake.</div></div></section>
+<section id="chat"><h2>Global chat: make it safe first</h2>
+<div class="rows">
+<div class="row"><b>Right now anyone in the room can post.</b> Nothing has been posted there yet.</div>
+<div class="row"><b>The change:</b> only you can post. Everyone can still react. People who join later can see earlier posts. It takes about 10 seconds, needs no restart and can be undone.</div>
+<div class="row"><b>Also worth doing (one chat restart):</b> two small fixes. One stops the member list marking everyone "paused". The other stops a burst of reactions pushing your post out of view.</div>
+<div class="row"><b>Reach:</b> 304 clients are in the room. 956 more real clients aren't. Adding them takes about 5 minutes and is silent. Without it, your post reaches about a quarter of clients.</div>
+<div class="row"><b>No push:</b> group chat notifications have been off since 2 September, so people see it when they open Messages.</div></div></section>
+<section id="bonus"><h2>The 3 bonus-entry links</h2>
+<div class="rows">
+<div class="row"><b>Why nobody was credited:</b> the app's step that records each person's 3 links went missing in a server update on 8 September. Every recording from then failed (346 tries). The website then had nowhere to log which friend came from which link.</div>
+<div class="row"><b>Fixed this morning (10:53):</b> the step is back, and every past link was recorded from the website and JF Mail records. This evening's check: the links of 522 entrants are all recorded. 3 links aren't yet, and the tidy-up script adds them.</div>
+<div class="row"><b>Who actually used one:</b> the website logs show 3 real friends who came in through someone's link. All 3 are saved and waiting. Each referrer gets their 100 points the moment their friend finishes setup in the app. All 3 friends are in tonight's email.</div>
+<div class="row"><b>One gap left:</b> the welcome email can still make up 3 new links of its own, which the app doesn't know about. The fix makes it reuse the links the app already has. It's written and tested, but not live.</div></div></section>
+<section id="yes"><div class="dark"><h2>What to say yes to</h2>
+<p class="sub">Reply with the numbers you're happy with. The send scripts refuse to run without that yes.</p>
+<ol class="plan"><li><b>Push:</b> yes to <i>Spring Kickstart is on</i> to 240 clients, tonight from 7:30pm or tomorrow from 7:30am.</li><li><b>Email:</b> yes to the two emails above, 531 people.</li><li><b>The other 318 entrants:</b> add them to JF Mail and email them too? Yes or no.</li><li><b>Global chat:</b> yes to only you posting (plus the two chat fixes). Then add all clients to the room: yes or no.</li><li><b>Your post:</b> the wording above, or your own.</li><li><b>Bonus links:</b> yes to putting the link fix live and running the tidy-up for the last 3 links.</li></ol>
+<p class="note">Open question: JF+ is in the prize rule. Can people sign up to JF+ today?</p></div></section>
 </main></body></html>
