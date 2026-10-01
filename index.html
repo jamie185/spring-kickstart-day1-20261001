@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spring Kickstart, day 1</title><link rel="preconnect" href="https://rsms.me/"><link rel="stylesheet" href="https://rsms.me/inter/inter.css"><style>
+*{box-sizing:border-box}body{margin:0;font:500 16px/1.45 Inter,-apple-system,system-ui,sans-serif;color:#222326;background:#fff;-webkit-font-smoothing:antialiased}
+main{max-width:1240px;margin:0 auto;padding:56px 24px 120px}
+h1{font-size:56px;line-height:1;letter-spacing:-.03em;font-weight:700;margin:0 0 12px}
+h2{font-size:36px;line-height:1.05;letter-spacing:-.025em;font-weight:700;margin:0 0 8px}
+h3{font-size:20px;letter-spacing:-.01em;margin:0 0 6px}
+.lede{font-size:20px;color:rgba(31,32,37,.6);margin:0 0 8px;max-width:760px}
+section{margin-top:88px}.sub{color:rgba(31,32,37,.6);margin:0 0 20px;max-width:760px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.card{background:#EBF0F8;border-radius:24px;padding:24px}
+.who{color:rgba(31,32,37,.6);font-size:14px;margin:0 0 14px}
+.msg{background:#fff;border-radius:18px;padding:16px;box-shadow:0 16px 40px -18px rgba(30,40,70,.35);font-size:15px}
+.note{font-size:13px;color:#8A8F99;margin:10px 0 0}
+.path{font-size:26px;letter-spacing:-.02em;margin-top:40px}
+.strip{display:flex;gap:16px;overflow-x:auto;padding:8px 2px 18px;scroll-snap-type:x mandatory}
+.strip.one{margin-top:-4px}
+.ph{flex:0 0 220px;margin:0;scroll-snap-align:start}
+.ph img{width:220px;border-radius:28px;box-shadow:0 16px 40px -18px rgba(30,40,70,.45);display:block;background:#F5F7FB}
+.ph figcaption{font-weight:650;margin-top:10px;font-size:15px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.tile{background:#F5F7FB;border-radius:18px;padding:20px}
+.tile b{display:block;font-size:44px;line-height:1;letter-spacing:-.03em;font-weight:700}
+.tile span{color:rgba(31,32,37,.6);font-size:14px}
+.dark{background:#1F2025;color:#fff;border-radius:24px;padding:32px}
+.dark .sub,.dark .note{color:rgba(255,255,255,.6)}
+.rows{display:grid;gap:10px}.row{background:#fff;border-radius:16px;padding:16px 18px}
+.dark .row{background:rgba(255,255,255,.07)}
+table{border-collapse:collapse;width:100%;font-size:15px}td,th{text-align:left;padding:10px 12px;border-bottom:1px solid #ECEEF2;vertical-align:top}th{font-weight:650}
+ol.plan li{margin:0 0 10px}
+@media(max-width:700px){h1{font-size:40px}h2{font-size:30px}.ph{flex-basis:180px}.ph img{width:180px}}
+</style></head>
+<body><main>
+<h1>Spring Kickstart,<br>day 1</h1>
+<p class="lede">What goes out today, what people see when they open the app, where things stand, and how JFI takes over coaching.</p>
+<p class="note">Thursday 1 October 2026. Screens are real captures from this morning's build on demo accounts.</p>
+<section id="announce"><h2>What goes out today</h2>
+<p class="sub">Nothing has been sent yet. Each one waits for your yes.</p>
+<div class="grid3"><div class="card"><h3>Push notification</h3><p class="who">Everyone in the app with notifications on (239 clients, about 1 in 5)</p><div class="msg"><b>Spring Kickstart starts today</b><br>Your new JF Coach is here. Tap to set up your Spring plan (2 minutes).</div><p class="note">Tap opens the app: film, welcome, setup.</p></div><div class="card"><h3>Email</h3><p class="who">Website entrants who haven&#x27;t signed in yet (about 83)</p><div class="msg"><b>It's started: set up your Spring Kickstart</b><br>Your free JF Coach app is ready. Get started: two minutes to set up. Stuck? Reply, or ask JFI in the app.</div><p class="note">Not built yet. Day 2, 3 and 5 reminders also not built.</p></div><div class="card"><h3>Global chat post, from you</h3><p class="who">Everyone in the global room (323 people; the other ~1,000 aren&#x27;t in it)</p><div class="msg">Welcome to the Spring Kickstart, everyone! This is where I'll post challenge news, weekly challenges and prizes. If you need anything, ask JFI.</div><p class="note">Make the room announcement-only first: right now anyone can post.</p></div></div></section>
+<section id="open"><h2>Opening the app for the first time</h2>
+<h3 class="path">New member</h3><p class="sub">Website entrant or brand-new client.</p>
+<div class="strip"><figure class="ph"><img src="img/a01-film.png" alt="1. Spring film" loading="lazy"><figcaption>1. Spring film</figcaption><p class="note">Plays muted for 59 s. Skip in the corner.</p></figure><figure class="ph"><img src="img/a02-welcome.png" alt="2. Welcome" loading="lazy"><figcaption>2. Welcome</figcaption><p class="note">Get Started, or Skip for Now.</p></figure><figure class="ph"><img src="img/a03-coach.png" alt="3. Pick your coach" loading="lazy"><figcaption>3. Pick your coach</figcaption><p class="note">JFI, Sarge, Prof or Buddy, and how often it checks in.</p></figure><figure class="ph"><img src="img/a04-goal.png" alt="4. Your goal" loading="lazy"><figcaption>4. Your goal</figcaption><p class="note">Strong, Tone, Trim, Fit or Wellbeing.</p></figure><figure class="ph"><img src="img/a05-training.png" alt="5. Your training" loading="lazy"><figcaption>5. Your training</figcaption><p class="note">Days, time, where, experience.</p></figure><figure class="ph"><img src="img/a06-habits.png" alt="6. Pick 3 habits" loading="lazy"><figcaption>6. Pick 3 habits</figcaption><p class="note">Plus how you appear on the board.</p></figure><figure class="ph"><img src="img/a07-injury.png" alt="7. Injuries" loading="lazy"><figcaption>7. Injuries</figcaption><p class="note">Yes or no. The program gate is off since 08:25.</p></figure><figure class="ph"><img src="img/a08-notify.png" alt="8. Notifications" loading="lazy"><figcaption>8. Notifications</figcaption><p class="note">Asks for push permission.</p></figure><figure class="ph"><img src="img/a10-tour.png" alt="9. 5-step tour" loading="lazy"><figcaption>9. 5-step tour</figcaption><p class="note">Your day, Training, Challenge, Add, More.</p></figure><figure class="ph"><img src="img/a11-home.png" alt="10. Home, set up" loading="lazy"><figcaption>10. Home, set up</figcaption><p class="note">This week&#x27;s challenge leads. Habits in To do.</p></figure></div>
+<div class="strip one"><figure class="ph"><img src="img/a12-home-skip.png" alt="If they press Skip" loading="lazy"><figcaption>If they press Skip</figcaption><p class="note">Home shows Finish setup until they do it.</p></figure></div>
+<h3 class="path">Existing client</h3><p class="sub">Not in the challenge yet: the same film, welcome and setup, with the returning line. Already joined: straight to Home, no film.</p>
+<div class="strip"><figure class="ph"><img src="img/b01-welcome-existing.png" alt="Welcome, returning" loading="lazy"><figcaption>Welcome, returning</figcaption><p class="note">Adds: “Even if you&#x27;ve done this before, we recommend doing it again.”</p></figure><figure class="ph"><img src="img/a03-coach.png" alt="Same setup, prefilled" loading="lazy"><figcaption>Same setup, prefilled</figcaption><p class="note">Their saved answers are kept.</p></figure><figure class="ph"><img src="img/b03-reveal-existing.png" alt="Keeps their program" loading="lazy"><figcaption>Keeps their program</figcaption><p class="note">“Your program from &lt;trainer&gt; is ready.”</p></figure><figure class="ph"><img src="img/b04-home.png" alt="Home" loading="lazy"><figcaption>Home</figcaption><p class="note">Their sessions, trainer and habits.</p></figure><figure class="ph"><img src="img/b02-redo-entry.png" alt="Redo any time" loading="lazy"><figcaption>Redo any time</figcaption><p class="note">Challenge tab: Finish or redo your setup.</p></figure></div></section>
+<section id="now"><h2>Right now, 12:40</h2>
+<div class="tiles"><div class="tile"><b>1,310</b><span>clients moved to the new app overnight</span></div><div class="tile"><b>166</b><span>opened it today (13%)</span></div><div class="tile"><b>~80</b><span>reached the setup form</span></div><div class="tile"><b>41</b><span>in the challenge (4 joined today)</span></div><div class="tile"><b>0</b><span>announcements sent</span></div><div class="tile"><b>0</b><span>JFI check-ins sent (switched off)</span></div></div></section>
+
+</main></body></html>
